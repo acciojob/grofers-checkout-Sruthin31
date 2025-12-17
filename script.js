@@ -7,10 +7,11 @@ const getSum = () => {
   const prices = document.querySelectorAll('.price');
 
 	let total = 0;
-	prices.forEach((p)=>{
+	prices.forEach((p) => {
 		total += parseFloat(p.textContent)
 	});
 	const table = document.querySelector('table');
+	
 	const newRow = document.createElement("tr");
 
 	const labelCell = document.createElement("td");
