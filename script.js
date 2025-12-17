@@ -11,16 +11,23 @@ const getSum = () => {
 		total += parseFloat(p.textContent)
 	});
 	const table = document.querySelector('table');
+
+	/*const exisitingrow = document.getElementId('.ans');
+	if(exisitingrow){
+		exisitingrow.remove();
+	}*/
 	
 	const newRow = document.createElement("tr");
-
+	
 	const labelCell = document.createElement("td");
+	
 	const totalCell = document.createElement("td");
 
+	
+	labelCell.textContent = 'Total Price:  ';
 	totalCell.textContent = total;
-	labelCell.textContent = 'Total Price: ';
-	newRow.id = 'ans';
-
+	newRow.id = "ans";
+	
 	newRow.append(labelCell,totalCell);
 	table.appendChild(newRow)
 };
