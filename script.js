@@ -10,6 +10,7 @@ const getSum = () => {
 	prices.forEach((p) => {
 		total += parseFloat(p.textContent)
 	});
+	
 	const table = document.querySelector('table');
 
 	/*const exisitingrow = document.getElementId('.ans');
@@ -24,9 +25,9 @@ const getSum = () => {
 	const totalCell = document.createElement("td");
 
 	
-	labelCell.textContent = 'Total Price:  ';
 	totalCell.textContent = total;
-	newRow.id = "ans";
+	labelCell.textContent = 'Total Price:  ';
+	newRow.id = 'ans';
 	
 	newRow.append(labelCell,totalCell);
 	table.appendChild(newRow)
